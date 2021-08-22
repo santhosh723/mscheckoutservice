@@ -38,6 +38,13 @@ import (
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
 )
 
+func connect()  {
+	user := "root"
+	password:= "supersecret" // Sensitive
+  
+	url := "login=" + user + "&passwd=" + password
+}
+
 const (
 	listenPort  = "5050"
 	usdCurrency = "USD"
