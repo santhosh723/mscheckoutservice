@@ -75,7 +75,7 @@ jobs:
         echo $HELM_BASE
         cd mscheckoutservice
         echo "CHART_DIR=$(pwd)" >> $GITHUB_ENV
-        sed -i 's/mscheckout_.*/'$IMAGE_TAG'"/g' values.yaml 
+        sed -i 's/mscheckoutimg_.*/'$IMAGE_TAG'"/g' values.yaml 
         grep tag values.yaml
         cd ../
         git add .
