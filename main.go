@@ -38,9 +38,6 @@ import (
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
 )
 
-func doNothing() { // Noncompliant
-}
-
 const (
 	listenPort  = "5050"
 	usdCurrency = "USD"
